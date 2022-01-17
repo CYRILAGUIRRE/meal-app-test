@@ -6,10 +6,17 @@
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
   min-height: 100vh;
   background: rgb(235, 244, 242);
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
 form {
   position: fixed;
   left: 50%;
@@ -20,6 +27,7 @@ form {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.157);
   z-index: 1000;
 }
+
 input {
   border: 1px solid rgb(235, 244, 242);
   background: rgb(235, 244, 242);
@@ -32,16 +40,19 @@ input {
   font-size: 1.2rem;
   transition: 0.2s;
 }
+
 input:focus {
   border: 1px solid #16d9e7;
 }
+
 #searchResult {
   padding-top: 110px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#searchResult > div {
+
+#searchResult>div {
   flex: 1 0 20%;
   min-width: 280px;
   max-width: 450px;
@@ -52,13 +63,16 @@ input:focus {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.233);
   position: relative;
 }
+
 h2 {
   margin: 6px auto;
   color: #16d9e7;
 }
+
 p {
   color: #36ca79;
 }
+
 img {
   width: 100%;
   margin: 10px 0;
@@ -66,9 +80,11 @@ img {
   object-fit: cover;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.233);
 }
+
 li {
   text-align: left;
 }
+
 iframe {
   width: 70%;
   height: 150px;
